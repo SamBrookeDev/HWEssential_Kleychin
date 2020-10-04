@@ -16,4 +16,4 @@ public class Main {
         subClass3 print3 = new subClass3();
         print3.print(value);
     }
-} // Не понял часть задания о приведении типов. Зачем?
+} // Не понял часть задания о приведении типов. Зачем?,
