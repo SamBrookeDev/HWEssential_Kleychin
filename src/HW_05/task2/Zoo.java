@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.ListIterator;
 
 public class Zoo {
-    public void animalz() {
+    public void getAnimals() {
         ArrayList<String> animals = new ArrayList<>();
         animals.add(0, "Lion");
         animals.add(1, "Tiger");
@@ -22,5 +22,7 @@ public class Zoo {
 
         }
 
+
     }
+
 }
