@@ -12,12 +12,12 @@ public class Worker implements Comparable {
         this.position = position;
         this.hireDate = hireDate;
     }
-
+    @Override
     public int compareTo(Object o) {
         return this.surname.compareTo(((Worker) o).surname);
 
     }
-
+    @Override
     public String toString() {return this.surname + " " + this.position + " " + this.hireDate;}
 
 
