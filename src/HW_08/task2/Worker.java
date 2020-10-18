@@ -2,7 +2,7 @@ package HW_08.task2;
 
 import java.time.LocalDate;
 
-public class Worker {
+public class Worker implements Comparable {
     public String surname;
     public String position;
     public LocalDate hireDate;
@@ -13,29 +13,13 @@ public class Worker {
         this.hireDate = hireDate;
     }
 
-//    public void setSurname(String surname) {
-//        this.surname = surname;
-//    }
-//
-//    public String getSurname() {
-//        return surname;
-//    }
-//
-//    public void setPosition(String position) {
-//        this.position = position;
-//    }
-//
-//    public String getPosition() {
-//        return position;
-//    }
-//
-//    public void setHireDate(LocalDate hireDate) {
-//        this.hireDate = hireDate;
-//    }
-//
-//    public LocalDate getHireDate() {
-//        return hireDate;
-//    }
+    public int compareTo(Object o) {
+        return this.surname.compareTo(((Worker) o).surname);
+
+    }
+
+    public String toString() {return this.surname + " " + this.position + " " + this.hireDate;}
+
 
 }
 
