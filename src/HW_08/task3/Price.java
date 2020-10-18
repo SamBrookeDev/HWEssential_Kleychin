@@ -3,7 +3,7 @@ package HW_08.task3;
 import javax.crypto.spec.PSource;
 import java.util.Scanner;
 
-public class Price implements Comparable{
+public class Price implements Comparable {
     String productName;
     String marketName;
     int price;
@@ -17,10 +17,11 @@ public class Price implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        return this.marketName.compareTo(((Price)o).marketName);
+        return this.marketName.compareTo(((Price) o).marketName);
     }
+
     @Override
     public String toString() {
-        return marketName;
+        return "Магазин -> " + this.marketName + "\n" + "Название товара -> " + this.productName + "\n" + "Цена товара -> " + this.price + " UAH";
     }
 }

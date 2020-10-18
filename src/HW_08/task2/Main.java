@@ -36,8 +36,7 @@ public class Main {
 
                 hireDate = LocalDate.of(year, month, day);
 //            System.out.println(hireDate);
-            } catch (
-                    IllegalStateException e) {
+            } catch (IllegalStateException e) {
                 System.err.println("Invalid input!");
             } catch (IndexOutOfBoundsException e) {
                 System.err.println("Invalid input!");
