@@ -43,6 +43,7 @@ public class Device {
         final int root = 13;
         int result = 1;
         result = root * result + (int)price;
-        return result;
+        System.out.print("Хэшкод объекта ->");
+        return  result;
     }
 }
