@@ -27,6 +27,8 @@ public class Main {
         System.out.println(device.hashCode());
         System.out.println(monitor.hashCode());
 
+        System.out.println(device.equals(monitor));
+
 
     }
 }

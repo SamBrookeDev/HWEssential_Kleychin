@@ -34,7 +34,7 @@ public class Monitor extends Device {
         final int root = 13;
         int result = 1;
         result = root * result + (resolutionX - resolutionY);
-        System.out.print("Хэшкод объекта ->");
+        System.out.print("Хэшкод объекта -> ");
         return result;
     }
 }

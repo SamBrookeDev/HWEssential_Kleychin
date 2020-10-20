@@ -43,7 +43,25 @@ public class Device {
         final int root = 13;
         int result = 1;
         result = root * result + (int)price;
-        System.out.print("Хэшкод объекта ->");
+        System.out.print("Хэшкод объекта -> ");
         return  result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+//        if (this == obj)
+//            return true;
+//        if (obj == null)
+//            return false;
+//        if (getClass() != obj.getClass())
+//            return false;
+        Device other = (Device) obj;
+        if (manufacturer != other.manufacturer)
+            return false;
+        if (price != other.price)
+            return false;
+        if (serialNumber != other.serialNumber)
+            return false;
+        return true;
     }
 }
